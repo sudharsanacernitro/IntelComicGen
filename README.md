@@ -1,4 +1,4 @@
-🕵️ ComicBook Generator with ComfyUI, Swarm, Flux & Ollama
+🕵️ ComicBook Generator with ComfyUI, Swarm, Flux & Ollama with CONSISTENT CHARACTER ACROSS PAGES
 
 This Python-based project automatically generates a comic book using:
 
