@@ -46,7 +46,7 @@ pip install swarm openai pillow img2pdf
 
 To generate a comic book, simply run:
 
-python main.py --story "Detective JamesBond and his case" --genre "crime" --server "9f41-103-196-28-166.ngrok-free.app"
+python main.py --story "Detective JamesBond and his case" --genre "crime" --server "Comgyui-server-ip"
 
 Arguments:
 
