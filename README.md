@@ -14,8 +14,8 @@ This Python-based project automatically generates a comic book using:
 
 Clone this repository
 
-    git clone https://github.com/yourusername/comicbook-ai.git
-    cd comicbook-ai
+    git clone https://github.com/sudharsanacernitro/IntelComicGen.git
+    cd IntelComicGen
 
 Create a virtual environment (optional but recommended)
 
