@@ -56,6 +56,10 @@ Arguments:
 
     --server: The ComfyUI inference server URL (e.g., ngrok tunnel to localhost)
 
+    --input_image(optional) : To use your image in Comic
+
+    --output(optional) : pdf name
+
 🧠 How It Works
 
     Story Creation
