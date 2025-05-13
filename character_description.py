@@ -39,7 +39,7 @@ class SceneCreation:
         """Get a reliable image description for the given scene"""
         story_agent = Agent(
             name="Comic Scene Describer",
-            model="Iris",
+            model="qwen2.5-coder:3b",
             instructions=self.scene_description_instructions(scene),
             temperature=0.7  # Balances creativity and focus
         )

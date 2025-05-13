@@ -23,7 +23,7 @@ def story_creation_agent_instructions():
 
 story_creation_agent = Agent(
     name="story creation agent",
-    model="Iris",
+    model="qwen2.5-coder:3b",
     instructions=story_creation_agent_instructions(),
     
 )

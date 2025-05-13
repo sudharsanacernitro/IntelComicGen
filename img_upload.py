@@ -23,7 +23,7 @@ class ComfyUIClient:
 
     def update_workflow_with_image(self, workflow, scenario_prompt,is_3rd_scene):
         """Update workflow with image reference"""
-        workflow["27"]["inputs"]["image"] = "201.jpeg"  # Update node ID as needed
+        workflow["27"]["inputs"]["image"] = "235.jpeg"  # Update node ID as needed
         workflow["17"]["inputs"]["text"] = f" anime ,only one scenario , No conversation/ dialogue,{scenario_prompt}"
 
         workflow["16"]["inputs"]["width"] = "512" if is_3rd_scene else "1024"
@@ -48,10 +48,11 @@ class ComfyUIClient:
             print(f"Response body: {e.read().decode('utf-8')}")
             raise
 
+
+    # Inside get_image method
     def get_image(self, prompt_id):
         """Retrieve generated image via WebSocket"""
-        ws = websocket.WebSocket()
-        ws.connect(self.ws_url)
+        ws = websocket.create_connection(self.ws_url)
         
         print(f"Waiting for image data for prompt ID: {prompt_id}")
         
@@ -70,6 +71,8 @@ class ComfyUIClient:
             ws.close()
         
         return None
+
+        # return None
 
     def _is_execution_complete(self, data, prompt_id):
         """Check if execution is complete"""
